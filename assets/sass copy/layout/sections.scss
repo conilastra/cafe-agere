@@ -1,0 +1,24 @@
+// Intro
+.intro {
+    &__img {
+        position: relative;
+        float: left;
+    }
+
+    &__title {
+        position: relative;
+        float: right;
+        text-align: center;
+        vertical-align: middle;
+        right: 100px;
+        top: 200px;
+    }
+
+} 
+
+.numbers {
+    position: absolute;
+    top: 600px;
+    right: 300px;
+    background-color: white;
+}
