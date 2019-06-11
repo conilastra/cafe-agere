@@ -1,0 +1,29 @@
+.primary-button {
+    border: 1px solid $spanish-gray;
+    font-family: $PTmono;
+    padding: 7px;
+    background-color: $white;
+    color: $spanish-gray;
+    margin-right: 2em;
+    
+
+    &--hover:hover {
+        border: 1px solid $black;
+        color: $black;
+    }
+}
+
+.secondary-button {
+    border: 1px solid $shiny-shamrock;
+    font-family: $PTmono;
+    padding: 7px;
+    background-color: $shiny-shamrock;
+    color: $white;
+    
+
+    &--hover:hover {
+        border: 1px solid $turquoise-green;
+        background-color: $turquoise-green;
+        color: $outer-space;
+    }
+}

@@ -7,19 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Café Agere</title>
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=PT+Mono|Roboto:300" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
 
 <body>
     <header>
-        <nav>
-            <img src="assets/img/logo.png" alt="">
-            <span>Acerca de</span>
-            <span>Tienda</span>
-            <button>Iniciar Sesión</button>
-            <button>Registrarte</button>
+        <nav class="navigation">
+            <img class="navigation__logo" src="assets/img/logo.png" alt="">
+            <a href="#" class="navigation__link navigation__link--hover">Acerca de</a>
+            <a href="#" class="navigation__link navigation__link--hover">Tienda</a>
+            <div class="navigation__buttons">
+                <button class="primary-button primary-button--hover">Iniciar Sesión</button>
+                <button class="secondary-button secondary-button--hover">Registrarte</button>
+            </div>
         </nav>
     </header>
 
@@ -29,26 +38,52 @@
             <img src="assets/img/img-1.png" alt="">
         </div>
         <div class="intro__title">
-            <h1>Café Agere</h1>
-            <h2>Coffe Shop</h2>
+            <h1>Café<br>Agere</h1>
+            <p>Coffee Shop</p>
         </div>
     </section>
 
 
-    <section class="numbers">
-        <table>
-            <tr>
-                <th>+50</th>
-                <th>20</th>
-                <th>+1000</th>
-            </tr>
-            <tr>
-                <td>Variedades de café</td>
-                <td>Países diferentes</td>
-                <td>Accesorios para hacer el mejor café</td>
-            </tr>
-        </table>
+    <section class="middle-section">
+        <div class="middle-section__numbers">
+            <table>
+                <tr>
+                    <th>+50</th>
+                    <th>20</th>
+                    <th>+1000</th>
+                </tr>
+                <tr>
+                    <td>Variedades de<br>café</td>
+                    <td>Países<br>diferentes</td>
+                    <td>Accesorios para<br>hacer el mejor café</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="yellow-square"></div>
+        <div class="orange-square">
+            <i class="arrow fas fa-arrow-right fa-3x"></i>
+        </div>
+
+
     </section>
+
+
+    <section class="map-section">
+        <div class="map-section__text">
+            <h3>Ven a Conocernos</h3>
+            <p>Disfruta de una gran experiencia tomando un café o un té dentro de nuestra tienda o si quieres puedes
+                comprar
+                en línea nuestros cafés para disfrutarlos en casa.</p>
+        </div>
+
+        <img class="map-section__map" src="assets/img/img-4.png" alt="">
+        <img class="map-section__grains" src="assets/img/img-3.png" alt="">
+        <div class="map-section__blue-rectangle"></div>
+        <img class="map-section__barista" src="assets/img/img-2.png" alt="">
+
+    </section>
+
 </body>
 
 </html>

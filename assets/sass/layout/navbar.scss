@@ -1,0 +1,26 @@
+.navigation {
+    padding: 1em 4em;
+    width: 100vw;
+
+    &__logo {
+        width: 29px;
+        height: 43px;
+        margin-right: 3em;
+    }
+
+    &__link {
+       margin: 0 1em;
+       font-size: $medium; 
+       color: $spanish-gray;
+
+       &--hover:hover {
+           color: $black;
+           text-decoration: none;
+       }
+    }
+
+    &__buttons {
+        position: relative;
+        float: right;
+    }
+}

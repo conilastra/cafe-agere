@@ -1,24 +1,144 @@
 // Intro
 .intro {
     &__img {
-        position: relative;
+        position: absolute;
         float: left;
+        object-fit: cover;
+        width: 899px;
+        height: 440px;
     }
 
     &__title {
+        box-sizing: border-box;
         position: relative;
         float: right;
-        text-align: center;
-        vertical-align: middle;
-        right: 100px;
-        top: 200px;
+        width: 381px;
+        height: 440px;
+
+        & h1 {
+            font-size: $xxx-large;
+            margin-bottom: 0;
+        }
+
+        & p {
+            font-size: 20px;
+        }
     }
+
 
 } 
 
-.numbers {
+.middle-section {
+    &__numbers {
+        position: absolute;
+        box-sizing: border-box;
+        top: 380px;
+        right: 467px;
+        width: 469px;
+        height: 136px;
+        background-color: white;
+        border: 0;
+        clear: right;  
+        padding: 1rem 2rem;
+        
+        & th {
+            font-size: $xx-large;
+            vertical-align: bottom;
+            padding: 0 1rem;
+        }
+
+        & td {
+            vertical-align: top;
+            padding: 0 1rem;
+        }
+    }
+
+    .yellow-square {
+        position: absolute;
+        top: 380px;
+        right: 335px;
+        width: 134.27px;
+        height: 136.67px;
+        background-color: #EACB31;
+        z-index: -1;
+    }
+
+
+    .orange-square {
+        position: absolute;
+        top: 360px;
+        right: 350px;
+        width: 134.27px;
+        height: 136.67px;
+        background-color: $flame;
+
+        .arrow {
+            color: $white;
+            text-align: center;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+
+    }
+
+}
+
+.map-section {
+    clear: right;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 600px;
-    right: 300px;
-    background-color: white;
+    top: 515px;
+
+    &__text {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 35vw;
+        padding: 3rem 2rem;
+
+        & p {
+            width: 288px;
+        }
+    } 
+
+    &__blue-rectangle {
+        position: absolute;
+        top: 0;
+        right: 465px;
+        width: 469px;
+        height: 232px;
+        background-color: $blue-de-france;
+        z-index: -1;
+    }
+
+    &__map {
+        position: relative;
+        bottom: 80px;
+        left: -100px;
+        object-fit: cover;
+        width: 396px;
+        height: 210px;
+    }
+
+    &__grains {
+        position: relative;
+        bottom: 114px;
+        right: 40px;
+        object-fit: cover;
+        width: 96px;
+        height: 165px;
+    }
+
+    &__barista {
+        position: relative;
+        top: -65px;
+        right: 90px;
+        object-fit: cover;
+        width: 381px;
+        height: 264px;
+        z-index: -1;
+    }
+
+
 }

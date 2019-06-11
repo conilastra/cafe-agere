@@ -1,1 +1,12 @@
-// hola 
+h1, h2, h3, h4, h5, h6, th, a {
+    font-family: $PTmono;
+    color: $black;
+    font-weight: 400;
+}
+
+p, td {
+    font-family: $roboto;
+    font-size: $medium;
+    font-weight: 300;
+    color: $black;
+}

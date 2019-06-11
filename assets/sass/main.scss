@@ -1,10 +1,17 @@
-//Vendors
+// vendors
 @import 'vendors/bootstrap-4.3/bootstrap.scss';
 
 // abstracts
 @import 'abstracts/variables.scss';
 
+// base
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
 
-// Sections
-@import 'layout/navbar.scss';
-@import 'layout/sections.scss';
+//layout
+@import 'layout/navbar';
+@import 'layout/sections';
+
+// components 
+@import 'components/buttons';
