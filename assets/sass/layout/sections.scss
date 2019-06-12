@@ -1,18 +1,19 @@
 // Intro
 .intro {
+
     &__img {
-        position: absolute;
+        position: relative;
         float: left;
         object-fit: cover;
-        width: 899px;
+       
         height: 440px;
     }
 
     &__title {
-        box-sizing: border-box;
         position: relative;
         float: right;
-        width: 381px;
+        right: 100px;
+        width: 250px;
         height: 440px;
 
         & h1 {
@@ -32,7 +33,7 @@
     &__numbers {
         position: absolute;
         box-sizing: border-box;
-        top: 380px;
+        top: 379px;
         right: 467px;
         width: 469px;
         height: 136px;
@@ -85,17 +86,11 @@
 }
 
 .map-section {
-    clear: right;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 515px;
+    
 
     &__text {
-        box-sizing: border-box;
         display: inline-block;
-        width: 35vw;
-        padding: 3rem 2rem;
+        margin: 2rem;
 
         & p {
             width: 288px;
@@ -103,39 +98,40 @@
     } 
 
     &__blue-rectangle {
-        position: absolute;
-        top: 0;
-        right: 465px;
+        display: inline-block;
+        position: relative;
+        right: 427px;
         width: 469px;
+        top: 0;
         height: 232px;
         background-color: $blue-de-france;
         z-index: -1;
     }
 
     &__map {
-        position: relative;
-        bottom: 80px;
-        left: -100px;
         object-fit: cover;
+        position: relative;
+        bottom: 95px;
         width: 396px;
         height: 210px;
     }
 
     &__grains {
-        position: relative;
-        bottom: 114px;
-        right: 40px;
         object-fit: cover;
+        position: relative;
+        bottom: 145px;
+        left: 70px;
         width: 96px;
         height: 165px;
     }
 
     &__barista {
-        position: relative;
-        top: -65px;
-        right: 90px;
         object-fit: cover;
+        position: relative;
+        float: right;
         width: 381px;
+        bottom: 333px;
+        right: 90px;
         height: 264px;
         z-index: -1;
     }
