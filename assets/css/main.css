@@ -9998,13 +9998,18 @@ body {
   background-color: #FFF;
 }
 
+html {
+  max-width: 1280px;
+  max-height: 800px;
+}
+
 h1, h2, h3, h4, h5, h6, th, a {
   font-family: "PT Mono", monospace;
   color: #000000;
   font-weight: 400;
 }
 
-p, td {
+p, td, h5 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -10013,7 +10018,6 @@ p, td {
 
 .navigation {
   padding: 1em 4em;
-  width: 1280px;
 }
 .navigation__logo {
   width: 29px;
@@ -10034,24 +10038,27 @@ p, td {
   float: right;
 }
 
+.intro {
+  display: inline-block;
+  clear: right;
+  margin: 0;
+}
 .intro__img {
   position: relative;
   float: left;
   object-fit: cover;
-  height: 440px;
+  width: 899px;
 }
 .intro__title {
   position: relative;
   float: right;
-  right: 100px;
-  width: 250px;
-  height: 440px;
+  left: 10vw;
 }
 .intro__title h1 {
   font-size: 70px;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
-.intro__title p {
+.intro__title h5 {
   font-size: 20px;
 }
 
@@ -10064,7 +10071,6 @@ p, td {
   height: 136px;
   background-color: white;
   border: 0;
-  clear: right;
   padding: 1rem 2rem;
 }
 .middle-section__numbers th {
@@ -10078,10 +10084,10 @@ p, td {
 }
 .middle-section .yellow-square {
   position: absolute;
-  top: 380px;
+  top: 379px;
   right: 335px;
-  width: 134.27px;
-  height: 136.67px;
+  width: 136px;
+  height: 136px;
   background-color: #EACB31;
   z-index: -1;
 }
@@ -10101,47 +10107,52 @@ p, td {
   right: 50px;
 }
 
+.map-section {
+  margin: 0;
+}
 .map-section__text {
   display: inline-block;
-  margin: 2rem;
+  position: relative;
+  bottom: 30px;
+  padding: 2rem;
 }
 .map-section__text p {
-  width: 288px;
+  width: 22vw;
 }
 .map-section__blue-rectangle {
   display: inline-block;
   position: relative;
-  right: 427px;
+  left: 61px;
+  top: -6px;
   width: 469px;
-  top: 0;
   height: 232px;
   background-color: #3C91E6;
-  z-index: -1;
 }
 .map-section__map {
   object-fit: cover;
-  position: relative;
-  bottom: 95px;
+  position: absolute;
+  right: 570px;
+  bottom: -130px;
   width: 396px;
   height: 210px;
 }
 .map-section__grains {
   object-fit: cover;
-  position: relative;
-  bottom: 145px;
-  left: 70px;
-  width: 96px;
-  height: 165px;
+  object-position: 45% 0;
+  position: absolute;
+  right: 370px;
+  bottom: -78px;
+  width: 121px;
+  height: 190px;
 }
 .map-section__barista {
   object-fit: cover;
   position: relative;
   float: right;
-  width: 381px;
-  bottom: 333px;
-  right: 90px;
-  height: 264px;
-  z-index: -1;
+  width: 430px;
+  height: 291px;
+  left: 90px;
+  top: -6px;
 }
 
 .primary-button {
