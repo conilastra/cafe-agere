@@ -10061,9 +10061,6 @@ p, td, h5 {
   font-size: 20px;
 }
 
-.middle-section {
-  width: 100vw;
-}
 .middle-section__numbers {
   position: absolute;
   box-sizing: border-box;
@@ -10108,23 +10105,16 @@ p, td, h5 {
   right: 50px;
 }
 
-.map-section {
-  width: 100vw;
-}
 .map-section__text {
-  display: inline-block;
+  float: left;
   position: relative;
-  bottom: 30px;
-  padding: 0 40px;
-  width: 390px;
-}
-.map-section__text h3, .map-section__text p {
-  padding-left: 30px;
+  box-sizing: border-box;
+  padding: 60px;
+  width: 430px;
 }
 .map-section__blue-rectangle {
-  display: inline-block;
+  float: left;
   position: relative;
-  left: 36px;
   width: 469px;
   height: 232px;
   background-color: #3C91E6;
@@ -10132,27 +10122,27 @@ p, td, h5 {
 .map-section__map {
   object-fit: cover;
   position: absolute;
-  right: 560px;
-  bottom: -130px;
+  float: left;
+  left: 400px;
+  top: 540px;
   width: 396px;
   height: 210px;
 }
 .map-section__grains {
   object-fit: cover;
-  object-position: 45% 0;
+  object-position: 40% 0;
   position: absolute;
-  right: 430px;
-  bottom: -60px;
+  float: left;
+  right: 400px;
   width: 96px;
   height: 165px;
 }
 .map-section__barista {
   object-fit: cover;
   position: relative;
-  float: right;
-  width: 421px;
+  float: left;
+  width: 381px;
   height: 264px;
-  right: 50px;
 }
 
 .primary-button {
