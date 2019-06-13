@@ -2,7 +2,7 @@
 .intro {
     display: inline-block;
     clear: right;
-    margin: 0;
+    width: 100vw;
 
     &__img {
         position: relative;
@@ -14,8 +14,8 @@
 
     &__title {
         position: relative;
-        float: right;
-        left: 10vw;
+        left: 100px;
+       
 
         & h1 {
             font-size: $xxx-large;
@@ -31,6 +31,8 @@
 } 
 
 .middle-section {
+    width: 100vw;
+
     &__numbers {
         position: absolute;
         box-sizing: border-box;
@@ -61,7 +63,7 @@
         width: 136px;
         height: 136px;
         background-color: #EACB31;
-        z-index: -1;
+        
     }
 
 
@@ -86,24 +88,26 @@
 }
 
 .map-section {
-    margin: 0;
+    width: 100vw;
 
     &__text {
         display: inline-block;
         position: relative;
         bottom: 30px;
-        padding: 2rem;
+        padding: 0 40px;
+        width: 390px; 
+        
 
-        & p {
-            width: 22vw;
+        h3, p {
+            padding-left: 30px;
         }
+
     } 
 
     &__blue-rectangle {
         display: inline-block;
         position: relative;
-        left: 61px;
-        top: -6px;
+        left: 36px;
         width: 469px;
         height: 232px;
         background-color: $blue-de-france;
@@ -113,7 +117,7 @@
     &__map {
         object-fit: cover;
         position: absolute;
-        right: 570px;
+        right: 560px;
         bottom: -130px;
         width: 396px;
         height: 210px;
@@ -124,10 +128,10 @@
         object-fit: cover;
         object-position: 45% 0;
         position: absolute;
-        right: 370px;
-        bottom: -78px;
-        width: 121px;
-        height: 190px;
+        right: 430px;
+        bottom: -60px;
+        width: 96px;
+        height: 165px;
      
     }
 
@@ -135,12 +139,9 @@
         object-fit: cover;
         position: relative;
         float: right;
-        width: 430px;
-        height: 291px;
-        left: 90px;
-        top: -6px;
-      
+        width: 421px;
+        height: 264px;
+        right: 50px; 
     }
-
 
 }
